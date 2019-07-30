@@ -29,7 +29,6 @@ body { background: #0f0f0f; }
 /* ------------------------------------------------------------------ */
 
 header {
-   /* animation:changepic 3s infinite; */
    position: relative;
    height: 800px;
    min-height: 500px;
@@ -40,13 +39,7 @@ header {
    text-align: center;
    overflow: hidden;
 }
-@keyframes changepic{
-   10%{     background: #161415 url(../images/header.JPG) no-repeat top center;    }
-   
-   50%{    background: #161415 url(../images/header.JPG) no-repeat top center; }
-   
-   100%{   background: #161415 url(../images/header.JPG) no-repeat top center;    }
-}
+
 /* vertically center banner section */
 header:before {
    content: '';

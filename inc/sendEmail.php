@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 // Replace this with your own email address
 $siteOwnersEmail = 'ghone.nitesh@gmail.com';
@@ -45,11 +45,6 @@ if($_POST) {
 
 
    if (!isset($error) || $error=='') {
-		// Please specify your Mail Server - Example: mail.example.com.
-		ini_set("SMTP",$siteOwnersEmail);
-
-		// Please specify an SMTP Number 25 and 8889 are valid SMTP Ports.
-		ini_set("smtp_port","25");
 
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
