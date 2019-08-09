@@ -29,11 +29,12 @@ body { background: #0f0f0f; }
 /* ------------------------------------------------------------------ */
 
 header {
+   animation:blinkingText 7s infinite;
    position: relative;
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header.JPG) no-repeat top center;
+   background-attachment: fixed;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -1029,6 +1030,14 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
+
+@keyframes blinkingText{
+   0%{     background: url(../images/pic5.JPG) repeat top center;    }
+   
+   50%{    background: url(../images/pic1.jpg) repeat top center; }
+   
+   100%{   background: url(../images/pic2.jpg) repeat top center;    }
+}
 
 
 .skillbar {
